@@ -11,7 +11,7 @@ import com.mindstix.web.api.version.management.annotations.ApiVersion;
 @ApiVersion("1.0")
 public class VersionCheckController {
 
-    @RequestMapping
+    @RequestMapping(path = "/")
     public ResponseEntity<String> checkControllerVersion() {
         return new ResponseEntity<>("Controller Version 1.0", HttpStatus.OK);
 
